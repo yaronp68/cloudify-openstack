@@ -23,7 +23,16 @@ The following configuration options are available in the cloudify-config.default
 
 * Networking configuration
 * Security Configuration
-* Compute Configuration
+
+* Management Server Configuration
+ * region: The Openstack Region in which this VM will be provisioned. 
+ * user_on_management: The username to use in order to SSH the manager VM
+ * userhome_on_management: The home directory for this user
+ * instance: VM configuration including:
+  * name - the host name
+  * image - the cloud image to use
+  * flavor - the hardware flavor to use
+
 
 
 
